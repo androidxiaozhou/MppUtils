@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--段落TextView通用样式*********start***********-->
+    <style name="style_textview_size_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+
+    <style name="style_textview_size_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+    </style>
+
+    <style name="style_textview_size_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">8.5dp</item>
+    </style>
+
+    <style name="style_textview_size_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingExtra">9dp</item>
+    </style>
+
+    <style name="style_textview_size_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+    </style>
+    <!--段落TextView通用样式*********end***********-->
+</resources>
