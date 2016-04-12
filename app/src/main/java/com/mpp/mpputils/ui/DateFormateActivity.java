@@ -14,21 +14,22 @@ import com.mpp.mpputils.utils.DateFormatUtils;
  */
 public class DateFormateActivity extends Activity {
     private int i = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date);
 
-        final TextView tv = (TextView)findViewById(R.id.tv_description) ;
-        Button button = (Button)findViewById(R.id.bt_date_switch) ;
+        final TextView tv = (TextView) findViewById(R.id.tv_description);
+        Button button = (Button) findViewById(R.id.bt_date_switch);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (i){
+                switch (i) {
                     case 0:
-                    tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.DATE_ALL));
-                    break;
+                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.DATE_ALL));
+                        break;
                     case 1:
                         tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.DATE_HOUR_MINUTE));
                         break;
@@ -48,10 +49,10 @@ public class DateFormateActivity extends Activity {
                         tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.YEAR_MONTH));
                         break;
                 }
-                if(i<6){
-                    i ++ ;
-                }else{
-                    i = 0 ;
+                if (i < 6) {
+                    i++;
+                } else {
+                    i = 0;
                 }
             }
         });
