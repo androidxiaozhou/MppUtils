@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.mpp.mpputils.R;
-import com.mpp.mpputils.utils.DateFormatUtils;
+import com.mpp.mpputils.utils.number.DateFormatUtil;
 
 public class MainActivity extends Activity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         TextView tv = (TextView)findViewById(R.id.tv_description) ;
-        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.DATE_ALL));
+        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.DATE_ALL));
 
     }
 }

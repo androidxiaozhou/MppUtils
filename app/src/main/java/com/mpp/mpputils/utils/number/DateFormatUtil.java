@@ -1,4 +1,4 @@
-package com.mpp.mpputils.utils;
+package com.mpp.mpputils.utils.number;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -7,7 +7,7 @@ import java.util.Date;
  * 日期格式化工具类
  * Created by mpp on 2016/4/8.
  */
-public class DateFormatUtils {
+public class DateFormatUtil {
 
     private static String[] formatType = new String[]{"yyyy-MM-dd HH:mm:ss","yyyy-MM-dd HH:mm","yyyy-MM-dd","MM-dd","yyyy年MM月","HH:mm:ss","MM.dd"} ;
 

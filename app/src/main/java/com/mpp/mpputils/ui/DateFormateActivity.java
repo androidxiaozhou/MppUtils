@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.mpp.mpputils.R;
-import com.mpp.mpputils.utils.DateFormatUtils;
+import com.mpp.mpputils.utils.number.DateFormatUtil;
 
 /**
  * 日期格式化页面
@@ -28,25 +28,25 @@ public class DateFormateActivity extends Activity {
             public void onClick(View v) {
                 switch (i) {
                     case 0:
-                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.DATE_ALL));
+                        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.DATE_ALL));
                         break;
                     case 1:
-                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.DATE_HOUR_MINUTE));
+                        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.DATE_HOUR_MINUTE));
                         break;
                     case 2:
-                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.DATE_TIME_ALL));
+                        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.DATE_TIME_ALL));
                         break;
                     case 3:
-                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.TIME_ALL));
+                        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.TIME_ALL));
                         break;
                     case 4:
-                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.MONTH_DAY_1));
+                        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.MONTH_DAY_1));
                         break;
                     case 5:
-                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.MONTH_DAY_2));
+                        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.MONTH_DAY_2));
                         break;
                     case 6:
-                        tv.setText(DateFormatUtils.getDateFormat(System.currentTimeMillis(), DateFormatUtils.FormatType.YEAR_MONTH));
+                        tv.setText(DateFormatUtil.getDateFormat(System.currentTimeMillis(), DateFormatUtil.FormatType.YEAR_MONTH));
                         break;
                 }
                 if (i < 6) {

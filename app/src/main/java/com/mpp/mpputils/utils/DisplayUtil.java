@@ -6,7 +6,7 @@ import android.content.Context;
  * dp、px、sp之间单位转换
  * Created by mengpeipei on 2016/4/11.
  */
-public class DisplayUtils {
+public class DisplayUtil {
     /**
      * @Description 根据手机的分辨率从 dip 的单位 转成为 px(像素)
      * @param context
